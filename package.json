@@ -1,0 +1,26 @@
+{
+  "name": "intouch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && parcel index.html",
+    "build": "npm run clean && parcel build index.html",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrOmelianenko/intouch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrOmelianenko/intouch/issues"
+  },
+  "homepage": "https://github.com/andrOmelianenko/intouch#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.8",
+    "rimraf": "^2.6.2",
+    "sass": "^1.15.2"
+  }
+}
