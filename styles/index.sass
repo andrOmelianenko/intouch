@@ -1,2 +1,84 @@
-.some
-  background-color: #000
+@import "./palette"
+@import "./sec_1"
+@import "./sec_2"
+@import "./sec_3"
+@import "./sec_4"
+@import "./sec_5"
+@import "./sec_6"
+
+@font-face
+  font-family: SF_reg
+  src: url(../assets/fonts/SFUIDisplay-Regular.ttf)
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: SF_thin
+  src: url(../assets/fonts/SFUIDisplay-Thin.ttf)
+  font-weight: 400
+  font-style: normal
+
+.sec_all
+  padding: 85px 10%
+
+.txt_h1
+  font: 48px/60px SF_reg, Arial, san-serif
+  letter-spacing: 1.5
+
+.txt_h2
+  max-width: 720px
+  margin: 0 auto
+  font: 36px/48px SF_reg, Arial, san-serif
+  font-weight: 600
+  letter-spacing: 1.3
+
+.txt_reg
+  font: 16px/24px SF_reg, Arial, san-serif
+  letter-spacing: 1
+
+.txt_thin
+  font: 18px/24px SF_thin, Arial, san-serif
+  letter-spacing: 1.2
+
+.txt_white
+  color: $white
+
+.txt_black
+  color: $black
+
+.txt_center
+  text-align: center
+
+.btn
+  font: 18px/24px SF_reg, Arial, san-serif
+  letter-spacing: 1
+  background-color: $main
+  color: $white
+  border: none
+  border-radius: 30px
+  height: 60px
+  padding: 0 30px
+  box-shadow: 1px 2px 4px 0 rgba(0,0,0,.25)
+  transition: opacity .3s
+  cursor: pointer
+  &:focus
+    outline: none
+  &:hover
+    opacity: .8
+
+.with_before
+  &:before
+    content: ''
+    height: 100%
+    width: 0
+    display: inline-block
+    vertical-align: middle
+
+.mask
+  z-index: 1
+  position: absolute
+  background-color: rgba(0,0,0,.35)
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
