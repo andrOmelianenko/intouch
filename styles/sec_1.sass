@@ -11,8 +11,8 @@
 .main_content
   z-index: 2
   position: relative
-  display: inline-block
-  vertical-align: middle
+  top: 50%
+  transform: translateY(-50%)
 
 .mask
   z-index: 1
@@ -39,3 +39,13 @@
     left: 0
     top: 50%
     transform: translateY(-50%)
+
+@media (max-width: 736px)
+  .sec_1
+    h1
+      text-align: center
+      max-width: none
+
+  .main_ul
+    margin: 60px auto 80px
+    max-width: 360px

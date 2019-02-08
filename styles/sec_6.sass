@@ -1,6 +1,8 @@
 .sec_6
   position: relative
   overflow: hidden
+  h2
+    max-width: none
 
 .sec_6_content
   margin: 55px 0 45px
@@ -16,3 +18,24 @@
   transform: translateY(-50%)
   right: 50px
   height: 450px
+
+@media (max-width: 1150px)
+  .sec_6_content
+    width: 65%
+
+  .sec_6_img
+    right: 30px
+    height: 360px
+
+@media (max-width: 736px)
+  .sec_6
+    h2
+      text-align: center
+
+  .sec_6_content
+    margin: 55px auto 45px
+    width: 100%
+    max-width: 500px
+
+  .sec_6_img
+    display: none
