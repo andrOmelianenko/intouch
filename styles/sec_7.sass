@@ -1,0 +1,46 @@
+.sec_7
+  background-color: $slider_bg
+
+.sec_7_content
+  margin: 50px auto 0
+
+.sec_7_item
+  border: 1px solid $border
+  background-color: $white
+  margin-bottom: 12px
+  &:last-child
+    margin-bottom: 0
+  label
+    position: relative
+    display: block
+    height: 60px
+    padding: 0 25px
+    cursor: pointer
+    p
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+  [data-name="txt_block"]
+    position: relative
+    min-height: 0
+    overflow: hidden
+    transition: min-height .4s
+    background-color: $light_gray
+    p
+      position: absolute
+      top: 50%
+      left: 25px
+      right: 25px
+      opacity: 0
+      transition: opacity .3s
+      transform: translateY(-50%)
+  input:checked ~ [data-name="txt_block"]
+    border-top: 1px solid $border
+    min-height: 120px
+    p
+      opacity: 1
+
+@media (max-width: 736px)
+  .sec_7_item
+    input:checked ~ [data-name="txt_block"]
+      min-height: 160px
